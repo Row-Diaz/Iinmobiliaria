@@ -48,6 +48,9 @@ const alquilerSection = document.getElementById("alquiler");
 for (let rent of propiedadesAlquiler) {
   if (rent.enAlquiler) {
     const propiedadTemplateString = `
+  <section id="alquiler1" class="mb-5">
+  <div class="row">
+  <div class="col-md-4 mb-4">
     <div class="card">
     <img src=${rent.src} class="card-img-top"
     alt="Imagen del departamento"
@@ -86,6 +89,10 @@ for (let rent of propiedadesAlquiler) {
                       </p>
                   </div>
                   </div>
+                  </div>
+                  </div>
+              
+                </section>
                   `;
     alquilerSection.innerHTML += propiedadTemplateString;
   }
