@@ -11,7 +11,7 @@ const propiedadesVenta = [
     habitaciones: 4,
     baños: 4,
     costo: 5000,
-    smoke: false,
+    smoke:false,
     pets: false,
     enVenta: true,
   },
@@ -25,7 +25,7 @@ const propiedadesVenta = [
     habitaciones: 2,
     baños: 1,
     costo: 1200,
-    smoke: true,
+    smoke:true,
     pets: true,
     enVenta: true,
   },
@@ -62,7 +62,7 @@ for (let buy of propiedadesVenta) {
                         ${buy.nombre}
                       </h5>
                       <p class="card-text">
-                        $rentr.descripcion}
+                        ${buy.descripcion}
                       </p>
                       <p>
                       <i class="fas fa-map-marker-alt"></i> 
@@ -78,16 +78,10 @@ for (let buy of propiedadesVenta) {
                         </p>
                         <p><i class="fas fa-dollar-sign"></i>${buy.costo}</p>
                         <p class="text-danger">
-                        <i class="fas fa-smoking-ban"></i>${
-                          buy.smoke ? "Permitido fumar" : "No se permite fumar"
-                        } 
+                        <i class="fas fa-smoking-ban"></i>${buy.smoke ?"Permitido fumar":"No se permite fumar"} 
                         </p>
-                        <p class="text-success">
-                        <i class="fas fa-paw"></i>${
-                          buy.pets
-                            ? "Mascotas permitidas"
-                            : "No se permiten mascotas"
-                        } 
+                        <p class="text-danger">
+                        <i class="fas fa-ban"></i>${buy.pets ? "Mascotas permitidas" : "No se permiten mascotas" } 
                         </p>
                     </div>
                     </div>
@@ -99,3 +93,4 @@ for (let buy of propiedadesVenta) {
     ventaSection.innerHTML += propiedadTemplateString;
   }
 }
+//<i class="fa-solid fa-ban" aria-hidden="true">

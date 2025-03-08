@@ -62,7 +62,7 @@ for (let rent of propiedadesAlquiler) {
                       ${rent.nombre}
                     </h5>
                     <p class="card-text">
-                      $rentr.descripcion}
+                      ${rent.descripcion}
                     </p>
                     <p>
                     <i class="fas fa-map-marker-alt"></i> 
