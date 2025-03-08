@@ -78,13 +78,13 @@ for (let rent of propiedadesAlquiler) {
                       </p>
                       <p><i class="fas fa-dollar-sign"></i>${rent.costo}</p>
                       <p>
-                       <i class="${rent.smoke ? 'text-success fas fa-smoking ' : 'text-danger fas fa-smoking-ban'}"></i>
-                      ${rent.smoke ? "Permitido fumar" : "No se permite fumar"}
-                       </p>
+                      <i class="${rent.smoke ? "text-success fas fa-smoking " : "text-danger fas fa-smoking-ban"}"></i>
+                                  ${rent.smoke ? "Permitido fumar" : "No se permite fumar"}
+                      </p>
 
                         <p>
-                       <i class="${rent.pets ? 'text-success fas fa-paw' : 'text-danger fas fa-ban'}"></i>
-                       ${rent.pets ? "Mascotas permitidas" : "No se permiten mascotas"}
+                       <i class="${rent.pets ? "text-success fas fa-paw" : "text-danger fas fa-ban"}"></i>
+                                  ${rent.pets ? "Mascotas permitidas" : "No se permiten mascotas"}
                        </p>
                   </div>
                   </div>
@@ -94,6 +94,5 @@ for (let rent of propiedadesAlquiler) {
                 </section>
                   `;
     alquilerSection.innerHTML += propiedadTemplateString;
-  } 
-    
-}   
+  }
+}

@@ -11,7 +11,7 @@ const propiedadesVenta = [
     habitaciones: 4,
     baños: 4,
     costo: 5000,
-    smoke:false,
+    smoke: false,
     pets: false,
     enVenta: true,
   },
@@ -25,7 +25,7 @@ const propiedadesVenta = [
     habitaciones: 2,
     baños: 1,
     costo: 1200,
-    smoke:true,
+    smoke: true,
     pets: true,
     enVenta: true,
   },
@@ -78,13 +78,13 @@ for (let buy of propiedadesVenta) {
                         </p>
                         <p><i class="fas fa-dollar-sign"></i>${buy.costo}</p>
                         <p>
-                        <i class="${buy.smoke ? 'text-success fas fa-smoking ' : 'text-danger fas fa-smoking-ban'}"></i>
-                        ${buy.smoke ? "Permitido fumar" : "No se permite fumar"}
+                        <i class="${buy.smoke ? "text-success fas fa-smoking " : "text-danger fas fa-smoking-ban"}"></i>
+                                  ${buy.smoke ? "Permitido fumar" : "No se permite fumar"}
                         </p>
 
                         <p>
-                        <i class="${buy.pets ? 'text-success fas fa-paw' : 'text-danger fas fa-ban'}"></i>
-                        ${buy.pets ? "Mascotas permitidas" : "No se permiten mascotas"}
+                        <i class="${buy.pets ? "text-success fas fa-paw" : "text-danger fas fa-ban"}"></i>
+                                  ${buy.pets ? "Mascotas permitidas" : "No se permiten mascotas"}
                         </p>
                         </div>
                         </div>
@@ -96,10 +96,3 @@ for (let buy of propiedadesVenta) {
     ventaSection.innerHTML += propiedadTemplateString;
   }
 }
-//<i class="fa-solid fa-ban" aria-hidden="true">
-                        // <p class="text-danger">
-                        // <i class="fas fa-smoking-ban"></i>${buy.smoke ?"Permitido fumar":"No se permite fumar"} 
-                        // </p>
-                        // <p class="text-danger">
-                        // <i class="fas fa-ban"></i>${buy.pets ? "Mascotas permitidas" : "No se permiten mascotas" } 
-                        // </p>
