@@ -77,20 +77,29 @@ for (let buy of propiedadesVenta) {
                         } <span>Baños</span>
                         </p>
                         <p><i class="fas fa-dollar-sign"></i>${buy.costo}</p>
-                        <p class="text-danger">
-                        <i class="fas fa-smoking-ban"></i>${buy.smoke ?"Permitido fumar":"No se permite fumar"} 
+                        <p>
+                        <i class="${buy.smoke ? 'text-success fas fa-smoking ' : 'text-danger fas fa-smoking-ban'}"></i>
+                        ${buy.smoke ? "Permitido fumar" : "No se permite fumar"}
                         </p>
-                        <p class="text-danger">
-                        <i class="fas fa-ban"></i>${buy.pets ? "Mascotas permitidas" : "No se permiten mascotas" } 
+
+                        <p>
+                        <i class="${buy.pets ? 'text-success fas fa-paw' : 'text-danger fas fa-ban'}"></i>
+                        ${buy.pets ? "Mascotas permitidas" : "No se permiten mascotas"}
                         </p>
-                    </div>
-                    </div>
-                    </div>
-                    </div>
-                
-                  </section>
-                    `;
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        
+                        </section>
+                        `;
     ventaSection.innerHTML += propiedadTemplateString;
   }
 }
 //<i class="fa-solid fa-ban" aria-hidden="true">
+                        // <p class="text-danger">
+                        // <i class="fas fa-smoking-ban"></i>${buy.smoke ?"Permitido fumar":"No se permite fumar"} 
+                        // </p>
+                        // <p class="text-danger">
+                        // <i class="fas fa-ban"></i>${buy.pets ? "Mascotas permitidas" : "No se permiten mascotas" } 
+                        // </p>
