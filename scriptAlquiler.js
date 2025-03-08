@@ -1,4 +1,4 @@
-// aLQUILER
+// ALQUILER
 
 const propiedadesAlquiler = [
   {
