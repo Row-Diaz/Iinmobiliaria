@@ -1,3 +1,5 @@
+// aLQUILER
+
 const propiedadesAlquiler = [
   {
     id: 0,
@@ -95,5 +97,6 @@ for (let rent of propiedadesAlquiler) {
                 </section>
                   `;
     alquilerSection.innerHTML += propiedadTemplateString;
-  }
-}
+  } 
+    
+}   
